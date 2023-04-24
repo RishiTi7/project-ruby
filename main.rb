@@ -63,12 +63,62 @@
 #strips the spaces
 # puts phrase.strip()
 
-phrase = "college romance"
+# phrase = "college romance"
 
 # puts phrase.length()
 
 
 # is rishikar inside of the phrase gives out a true or false
 # puts phrase.include? "rishikar"
-#access
-puts phrase[0]
+
+#access index and splitting
+# puts phrase[0,4]
+# puts phrase.index("c")
+
+# puts "programming".upcase()
+
+#Numbers
+
+# puts 2**3 #2^3 2 raised to 3
+
+# puts 10%3  # remainder
+
+# num = 23
+
+# puts num+3
+
+# converting num to string otherwise we cant convert this and we get an implicit error
+
+# puts ("my fav num is " + num.to_s)
+# nums = 23.1
+#absolute value
+# puts nums.abs()
+# puts nums.round()
+
+#give us the next highest number
+# puts nums.ceil()
+
+#give me without decimal
+# puts nums.floor()
+
+# MATH class
+# puts Math.log(1)
+# puts Math.sqrt(36)
+
+# if we are using tow float points we gonna get float but if we use two integers we will get integers an integer plus float we get float
+# puts 10/7 #integer
+# puts 10/7.0 #long
+
+#getting inputs from users
+
+puts "Enter your name:"
+name = gets.chomp() # gets rid of new line
+puts ("hello " + name+ "welcome")  #new line
+puts "Enter your age:"
+age = gets.chomp() # gets rid of new line
+puts ( age + "years old")  #new line
+
+
+
+
+
