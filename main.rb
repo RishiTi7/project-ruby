@@ -26,3 +26,49 @@
 
 # Data Types
 
+# string data types
+# name = "rishi"
+
+#int
+# age = 22
+
+#float
+# age_precise = 21.00
+
+# print age_precise
+
+# Boolean
+
+# is_there = true
+# is_tall = false
+
+# print is_tall
+
+# Nil
+
+# flaws = nil
+
+# puts "college\nstudents"  #new line
+# puts "college \"students\""  #to print the literal ""
+
+#methods
+
+# phrase = "college romance"
+
+# puts phrase.downcase()
+
+
+# phrase = "         college romance"
+
+#strips the spaces
+# puts phrase.strip()
+
+phrase = "college romance"
+
+# puts phrase.length()
+
+
+# is rishikar inside of the phrase gives out a true or false
+# puts phrase.include? "rishikar"
+#access
+puts phrase[0]
