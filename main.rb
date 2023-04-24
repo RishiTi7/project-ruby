@@ -1,3 +1,5 @@
+#RUBY lang
+
 #Basics
 
 # print "hi rishi "
@@ -111,12 +113,147 @@
 
 #getting inputs from users
 
-puts "Enter your name:"
-name = gets.chomp() # gets rid of new line
-puts ("hello " + name+ "welcome")  #new line
-puts "Enter your age:"
-age = gets.chomp() # gets rid of new line
-puts ( age + "years old")  #new line
+# puts "Enter your name:"
+# name = gets.chomp() # gets rid of new line
+# puts ("hello " + name+ "welcome")  #new line
+# puts "Enter your age:"
+# age = gets.chomp() # gets rid of new line
+# puts ( age + "years old")  #new line
+
+
+# building a calculator
+
+# puts "Enter a number:"
+# num1 = gets.chomp().to_f
+# puts "Enter another number:"
+# num2 = gets.chomp().to_f
+
+# #by default ruby converts numbers to strings concatenates, so add to_i
+
+# puts(num1.to_i+num2.to_i) #to integer
+# puts(num1.to_f+num2.to_f) #to float
+
+# Madlib game
+
+# puts "enter a color"
+# color = gets.chomp()
+
+# puts "enter a plural noun"
+# plural_noun = gets.chomp()
+
+# puts "enter a plural celebrity"
+# celebrity = gets.chomp()
+
+
+# puts("roses are " +color)
+# puts(plural_noun+" are blue")
+# puts("i love +"celebrity)
+
+# Arrays 
+
+# friends = Array["rishi","bhavan","karen","oscar",1]
+
+# # friends[0] = 'dwight'
+# # puts friends[0,2] #range
+# # puts friends[-1]  #reverse
+# # puts friends[0]  #index
+# puts friends.length()
+# puts friends.include? "vim"
+# puts friends.reverse()
+# puts friends.sort() #if multiple data types then we cant sort 
+
+# empty array 
+# friend = Array.new
+
+# friend[0] = "mike"
+# friend[5] = "holly"
+
+# puts friend
+
+
+# Hashes ( key value pair )
+# only unique keys
+# states = {
+#     "new york" => "NY",
+#     "iowa" => "IW",
+#     "new orleans" => "NO",
+#     :texas => "TY",
+#     1 => "india"
+# }
+
+# puts states
+# puts states[:texas]
+
+
+# Method or functions same thing
+# simple method
+
+# def sayHi
+#     puts "hello sexy"
+# end
+
+# sayHi
+
+
+# def sayHi(name = "rishi",age =-1)  # parameter
+#     puts ("hello "  + name + ", years old:" + age.to_s )
+# end
+
+# sayHi("rishi")
+
+# Return statements
+
+# def cube(num)
+#     return num * num * num ,60 # after return it doesnt get executed done with the method   
+# end    # returning multiple values
+
+# puts cube(2)
+
+# If statements
+
+# is_male = false
+# is_tall = true
+
+# and , or operator 
+#and
+
+# if is_male and is_tall
+#     puts"hii bro welcome to the roller coaster"
+# else
+#     puts"hii pilla welcome to small ride"
+# end    
+
+#or
+# if is_male and is_tall
+#     puts"hii bro welcome to the roller coaster"
+#     # not 
+# elsif is_male and !is_tall
+#     puts"you are a short male"  
+# elsif !is_male and is_tall
+#     puts "you are not male but are tall"      
+# else
+#     puts"hii pilla welcome to small ride"
+# end        
+
+# comparison operator == !=  <=  >= 
+# def max(num1,num2,num3)
+#     if num1 >= num2 and num1 >= num3
+#         return num1
+#     elsif num2>= num1 and num2 >= num3
+#         return num2
+#     else
+#         return num3  
+#     end    # we are putting end here to end the if statement   
+# end  # this to end the function
+
+# puts max(1,2,3)
+
+#building a better calculator complete calc
+
+
+
+
+
 
 
 
