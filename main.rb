@@ -389,8 +389,40 @@
 
 # puts power(5,4)
 
+# comment block
+
+=begin
+tihsi
+tidh
+t4hiefhe
+hifheh
+hiechsef
+hids9eje
+=end
 
 
+# read a file
+
+# File.open("employees.txt","r") do |file| # store that file in this file
+#     # puts file.read().include? "jim"
+#     # puts file.readline()  # reading each line
+#     # puts file.readline() 
+#     # puts file.readchar()  #first letter
+
+#     puts file.readlines()[2]
+
+#     for line in file.readlines()
+#         puts line
+#     end    
 
 
+# end    
+
+# another way  we have to close the file
+
+# file = File.open("employees.txt","r")
+
+# puts file.read
+
+# file.close()
 
