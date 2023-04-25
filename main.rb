@@ -248,14 +248,100 @@
 
 # puts max(1,2,3)
 
-#building a better calculator complete calc
+#building a better calculator **complete calc**
+
+# puts "Enter first number"
+# num1 = gets.chomp().to_f
+# puts "Enter the operator"
+# op = gets.chomp()
+# puts "Enter second number"
+# num2 = gets.chomp().to_f
 
 
+# if op == "+"
+#     puts( num1+num2)
+# elsif op =="-"
+#     puts( num1-num2)
+# elsif op =="/"
+#     puts( num1/num2)
+# elsif op =="*"
+#     puts( num1*num2)
+# else
+#     puts "not valid"    
+# end    
 
 
+# Case expression
+
+# if day == "mon"
+#     day_name = "monday"
+# elsif day == "tue"
+#     day_name = "tuesday"    
+
+#use case expression
+
+# def get_day_name(day)
+#     day_name = ""
+    
+#     case day 
+
+#     when "mon"
+#         day_name = "monday"
+#     when "tue"
+#         day_name = "tuesday"
+#     when "wed"
+#         day_name = "wednesday"
+#     when "thu"
+#         day_name = "thursday"
+#     when "fri"
+#         day_name = "friday"
+#     when "sat"
+#         day_name = "saturday"
+#     when "sun"
+#         day_name = "sunday"
+#     else
+#         day_name = "not valid abbreviation"
+
+#     end    
+
+#     return day_name
+# end
+
+# puts get_day_name("rishi")
 
 
+# while loop
 
+# index = 1 
 
+# while index <= 5
+#     puts index
+#     index +=1
+# end    
 
+# guessing game
+
+secret_word = "ruby"
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = false
+
+while guess != secret_word and !out_of_guesses
+    if guess_count < guess_limit
+
+        puts "enter guess:"
+        guess = gets.chomp()
+        guess_count += 1
+
+    else
+        out_of_guesses = true
+    end    
+end    
+if out_of_guesses
+    puts "you lose"
+else
+    puts "you won"
+end    
+    
 
