@@ -321,27 +321,76 @@
 
 # guessing game
 
-secret_word = "ruby"
-guess = ""
-guess_count = 0
-guess_limit = 3
-out_of_guesses = false
+# secret_word = "ruby"
+# guess = ""
+# guess_count = 0
+# guess_limit = 3
+# out_of_guesses = false
 
-while guess != secret_word and !out_of_guesses
-    if guess_count < guess_limit
+# while guess != secret_word and !out_of_guesses
+#     if guess_count < guess_limit
 
-        puts "enter guess:"
-        guess = gets.chomp()
-        guess_count += 1
+#         puts "enter guess:"
+#         guess = gets.chomp()
+#         guess_count += 1
 
-    else
-        out_of_guesses = true
-    end    
-end    
-if out_of_guesses
-    puts "you lose"
-else
-    puts "you won"
-end    
+#     else
+#         out_of_guesses = true
+#     end    
+# end    
+# if out_of_guesses
+#     puts "you lose"
+# else
+#     puts "you won"
+# end    
+
+
+#for loops
+
+# friends = ["rishi","bhavan","daya","laksh","andy"]
     
+# for friend in friends
+#     puts friend
+
+# end
+
+#another loop
+
+# friends.each do |friend|
+#     puts friend
+# end   
+
+
+# for index in 0..5
+#     puts index
+# end    
+
+# another way 
+
+# 6.times do |index|
+#     puts index
+# end    
+
+
+# exponent method
+
+# this works for positive exponents only
+
+# def power(base_num, pow_num)
+
+#     result = 1
+
+#     pow_num.times do|index|   # other way to write pow_num.times do 
+#         result = result* base_num        
+#     end    
+
+#     return result
+# end
+
+# puts power(5,4)
+
+
+
+
+
 
