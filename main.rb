@@ -580,4 +580,81 @@ hids9eje
 
 # quiz game
 
+# class Question
+#     attr_accessor :prompt,:answer
+#     def initialize(prompt,answer)
+#         @prompt = prompt
+#         @answer = answer        
+#     end
+# end
 
+# p1 = "what color are apples?\n(a)red\n(b)purple\n(c)orange"    
+# p2 = "what color are bananas?\n(a)pink\n(b)purple\n(c)yellow"    
+# p3 = "what color are pears?\n(a)yellow\n(b)green\n(c)orange"    
+
+
+# questions = [
+#     Question.new(p1,"a"),
+#     Question.new(p2,"c"),
+#     Question.new(p3,"b")
+# ]
+
+# def run_test(questions)
+#     answer = ""
+#     score = 0
+#     for question in questions
+#         puts question.prompt
+#         answer = gets.chomp()
+#         if answer == question.answer
+#             score +=1
+#         end
+#     end
+#     puts ("you got " + score.to_s  + "/" + questions.length().to_s)
+# end
+
+# run_test(questions)
+
+
+#************* Inheritance **************
+
+# class Chef
+#     def make_chicken
+#         puts "The chef makes chicken"
+#     end
+#     def make_salad
+#         puts "The chef makes salad"
+#     end
+#     def make_pizza
+#         puts "The chef makes pizza"
+#     end
+# end
+
+# # inherited from super class 
+# # sub class
+# class ItalianChef < Chef
+#     # override method == method overriden to the same method as above
+#     def make_pizza
+#         puts "The chef makes italian pizza"
+#     end
+#     def make_pasta
+#         puts "The chef makes pasta"
+#     end
+
+# end
+
+
+# chef = Chef.new()
+# chef.make_pizza
+
+# italianChef = ItalianChef.new()
+# italianChef.make_pizza
+# italianChef.make_pasta
+# ***************************************************************************
+
+# like import
+require_relative "useful_tools.rb"
+
+include Tools
+Tools.sayhi("rishi")
+
+# interactive ruby irb 
