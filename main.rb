@@ -652,9 +652,9 @@ hids9eje
 # ***************************************************************************
 
 # like import
-require_relative "useful_tools.rb"
+# require_relative "useful_tools.rb"
 
-include Tools
-Tools.sayhi("rishi")
+# include Tools
+# Tools.sayhi("rishi")
 
 # interactive ruby irb 
