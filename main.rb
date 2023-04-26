@@ -426,3 +426,158 @@ hids9eje
 
 # file.close()
 
+#file modes
+
+# append
+# File.open("employees.txt","a") do |file|
+#     file.write("\nbhavan, ceo")
+# end
+
+#write overwrites everything in the file and also creates a new file
+# File.open("index.html","w") do |file|
+#     file.write("<h1>hello</h1>")
+# end
+
+# read write
+# File.open("employees.txt","r+") do |file|
+#     file.readline()
+#     file.write("overridden")
+# end
+
+# readline reads line by line so in this case the file cursor is at second line and writes at second line 
+
+# handling errors
+
+# num = 10/0 
+# lucky = [1,2,3,4,5,6]
+
+# lucky["dog"]
+# catching errors
+
+# single error 
+# begin
+#     num = 10/0
+# rescue
+#     puts "division by zero error"
+# end
+    
+#multiple errors 
+
+# lucky = [1,2,3,4,5,6]
+
+# begin
+#     lucky["dog"]
+#     num = 10/0
+# rescue ZeroDivisionError    # its better to specify the error
+#     puts "division by zero error"
+# rescue TypeError => e    # storing in the variable
+#     puts e    # error
+# end
+
+# classses and objects in ruby
+
+# class is a custom data type 
+
+# all variables in ruby are just objects  all data in ruby is an object
+
+# class Book
+#     attr_accessor :title,:author,:pages
+# end
+
+# book1 = Book.new()
+# book1.title = "Harry Potter"
+# book1.author = "JK Rowling"
+# book1.pages = 450
+
+# puts book1.title
+# puts book1.author
+# puts book1.pages
+
+
+# book2 = Book.new()
+
+# book2.title = "Lord of the Rings"
+# book2.author = "Tolkien"
+# book2.pages = 1000
+
+# puts book2.pages
+
+# initialize method
+
+# class Book
+#     attr_accessor :title,:author,:pages
+#     def initialize(name)
+#         puts ("hello" + name)
+#     end
+# end
+    
+#     book1 = Book.new("rishi")  # whenever we pass a new we initialize a method
+#     book1.title = "Harry Potter"
+#     book1.author = "JK Rowling"
+#     book1.pages = 450
+    
+#     # puts book1.title
+#     # puts book1.author
+#     # puts book1.pages
+    
+    
+#     book2 = Book.new("bhavan")
+    
+#     book2.title = "Lord of the Rings"
+#     book2.author = "Tolkien"
+#     book2.pages = 1000
+    
+#     # puts book2.pages
+
+
+# class Book
+#     attr_accessor :title,:author,:pages
+#     def initialize(title,author,pages)
+#         # @ this is referring to the title attribute 
+#         @title= title
+#         @author = author
+#         @pages = pages
+#     end
+# end
+    
+#     book1 = Book.new("Harry Potter","JK rowling",400) 
+    
+#     puts book1.title
+#     puts book1.author
+#     puts book1.pages
+    
+    
+#     book2 = Book.new("Lord of the Rings","Tolkien",1000)
+    
+#     puts book2.pages
+
+
+# Instance methods class methods objects methods 
+
+# class Student
+#     attr_accessor :name,:major,:gpa
+#     def initialize(name,major,gpa)
+#         @name = name
+#         @major = major
+#         @gpa = gpa
+        
+#     end
+
+#     def has_honors
+#         if @gpa >= 3.5
+#             return true
+#         else
+#             return false
+#         end
+#     end 
+# end
+
+# student1 = Student.new("jim","cse",2.7)
+# student2 = Student.new("rishi","ce",4.0)
+
+# puts student1.has_honors
+# puts student2.has_honors
+
+# quiz game
+
+
